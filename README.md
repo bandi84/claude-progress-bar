@@ -5,6 +5,7 @@ A Claude Code mod that adds a **Progress** side pane: a pixel-art Claude Code ma
 - **While Claude works:** the bar creeps toward 90% on its own and nudges forward with every tool call. The label shows what Claude is doing (reading files, editing code, running commands). The mascot wears a visor, jumps, and shoots flames from its feet.
 - **When the turn ends:** the bar sweeps to 100% and the mascot celebrates with confetti.
 - **Claude can report its own progress** through the `set_progress` tool (percent 0-100 plus a short label), and the bar jumps to that value.
+- Closed the pane? Type `/progress` to reopen it.
 - Values live only for the session. Nothing is stored or sent anywhere.
 
 The pixel-art drawing is used on the desktop app; a plain text version is used where the pane is drawn in a terminal.

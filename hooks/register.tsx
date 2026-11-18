@@ -53,9 +53,19 @@ export const register: Register = on => {
       },
       isDeferred: false,
     })
+    await $.command.register({
+      name: 'progress',
+      description: 'Open (or reopen) the progress bar pane',
+    })
     void $.ui.open({ id: PANE, title: 'Progress' })
 
     return next(e)
+  })
+
+  on('command.run', { command: 'progress' }, async $ => {
+    await $.ui.open({ id: PANE, title: 'Progress' })
+
+    return { text: 'Progress pane opened.' }
   })
 
   on('prompt.compose', async ($, e, next) => {
