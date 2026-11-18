@@ -1,0 +1,8 @@
+{
+  "name": "progress-bar",
+  "version": "0.1.0",
+  "description": "A side pane with a pixel-art Claude Code mascot and a 0-100% progress bar that tracks how close Claude is to finishing.",
+  "license": "MIT",
+  "author": { "name": "bandi84" },
+  "types": "./types/index.d.ts"
+}
